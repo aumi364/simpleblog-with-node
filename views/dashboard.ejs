@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">Your profile</div>
+    
+    <div class="ui top attached">
+        <div class="item">
+                <img class="ui centered rounded image" src=" <%= user.avatar %>" width="300" height="300">
+                <div class="content">
+                    <p>User id: <%= user.username%></p>  
+                    <p>Name:   <%= user.name%></p>
+                    <p>Email:  <%= user.email %></p>
+                    
+                </div>
+                
+              
+        </div>
+        
+    </div>
+   
+   
+   
+    
+   
+</div>
+<% include ./partials/footer %>

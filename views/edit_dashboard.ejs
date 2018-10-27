@@ -1,0 +1,30 @@
+<% include ./partials/header %></label>
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit profile</div>
+    <form class="ui form" action="/blogs/dashboard/<%=user._id%>?_method=PUT" method="POST">
+        <div class="field">
+            <label>User Name</label>
+            <input type="text" name="user[username]" value="<%= user.username %>">
+        </div>
+       
+        <div class="field">
+            <label>Avatar<label>
+                    <input type="text" name="user[avatar]" value="<%= user.avatar %>" >
+        </div>
+        <div class="field">
+            <label>Email<label>
+                    <input type="email" name="user[email]" value="<%= user.email %>" >
+        </div>
+        <div class="field">
+            <label>Name<label>
+                    <input type="text" name="user[name]" value="<%= user.name %>" >
+        </div>
+
+
+
+        <input class="ui violet basic button" type="submit">
+
+    </form>
+
+</div>
+<% include ./partials/footer %>

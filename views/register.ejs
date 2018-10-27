@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header"> Sign up </div>
+    <form class="ui form" action="/blogs/register" method="POST">
+        <div class="field">
+            <label>User Name</label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="field">
+            <label>Password<label>
+                    <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="field">
+            <label>Avatar<label>
+                    <input type="text" name="avatar" placeholder="Avatar">
+        </div>
+        <div class="field">
+            <label>Email<label>
+                    <input type="email" name="email" placeholder="email">
+        </div>
+        <div class="field">
+            <label>Name<label>
+                    <input type="text" name="name" placeholder="name">
+        </div>
+
+        <input class="ui violet basic button" type="Submit">
+
+    </form>
+
+</div>
+<% include ./partials/footer %>
